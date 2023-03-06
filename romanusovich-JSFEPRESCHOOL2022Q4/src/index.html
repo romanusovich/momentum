@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="audio-player">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="controls">
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <div class="time-player">
+            <div class="current">0:00</div>
+            <div class="divider">/</div>
+            <div class="length">0:00</div>
+          </div>
+          <div class="volume-container">
+            <div class="volume-button">
+              <div class="volume icono-volumeMedium"></div>
+            </div>
+            <div class="volume-slider">
+              <div class="volume-percentage"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="play-list"></ul>
+      </div>
+    </div>
+    <div class="to-do-container">
+      <div class="to-do-buttons">
+        <input type="text" class="to-do-input"/>
+        <div class="to-do-add icono-plus"></div>
+      </div>
+      <div class="to-do-list">
+        <ul class="to-do"></ul>
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="" value="" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="quote-of-day">
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <div class="options-button icono-gear"></div>
+  <div class="options">
+    <span class="lng-span">Selected language:</span>
+    <select class="lng-select">
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
+    </select>
+    <span class="api-span">Selected background image source:</span>
+    <select class="api-select">
+      <option value="git">GitHub</option>
+      <option value="unsplash">Unsplash</option>
+      <option value="flickr">Flickr</option>
+    </select>
+    <span class="api-tag-span">Tag for API:</span>
+    <input type="text" class="api-tag"/>
+    <ul class="show-hide-group">
+      <li><input name="time" type="checkbox" checked/>Time</li>
+      <li><input name="date" type="checkbox" checked/>Date</li>
+      <li><input name="greeting-container" type="checkbox" checked/>Greeting</li>
+      <li><input name="quote-of-day" type="checkbox" checked/>Quote</li>
+      <li><input name="audio-player" type="checkbox" checked/>Player</li>
+      <li><input name="weather" type="checkbox" checked/>Weather</li>
+      <li><input name="to-do-container" type="checkbox" checked/>To Do</li>
+    </ul>
+    <div class="save-cancel">
+      <button class="save-options">Save</button>
+      <button class="cancel-options">Cancel</button>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
